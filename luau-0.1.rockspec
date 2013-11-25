@@ -1,4 +1,4 @@
-package = "Lual"
+package = "Luau"
 version = "0.1"
 source = {
    url = "https://github.com/corcorans/Luau"
