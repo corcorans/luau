@@ -18,7 +18,9 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      tableutils = "src/tableutils.lua",
-      stringutils = "src/stringutils.lua"
+      ioutils = "src/ioutils.lua",
+      osutils = "src/osutils",
+      stringutils = "src/stringutils.lua",
+      tableutils = "src/tableutils.lua"
    }
 }
