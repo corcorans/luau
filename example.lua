@@ -1,5 +1,6 @@
 local tableutils = require "src/tableutils"
 local stringutils = require "src/stringutils"
+local osutils = require "src/osutils"
 
 local t = {"A", "B", "C", "D"}
 local s = tableutils:reverse(t)
@@ -11,3 +12,7 @@ print("")
 
 print("stringutils example")
 print(stringutils:swapcase("aBcD"))
+
+print("")
+
+print("OS is " .. osutils:get_os())
