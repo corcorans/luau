@@ -30,7 +30,7 @@ function tableutils:find(t, i)
     end
   end
 
-  return nil
+  return -1
 end
 
 -- Reverses a table
@@ -59,7 +59,7 @@ function tableutils:delete_at(t, i)
       return true
     end
   end
-
+  
   return false
 end
 
