@@ -64,19 +64,20 @@ function tableutils:delete_at(t, i)
 end
 
 -- Upper or lower cases the values in the give table
+-- @error: Will be raised the case type is not upper or lower
 -- @param: t - table to change
 -- @param: c - case type (upper or lower)
--- @error: Will be raised the case type is not upper or lower
+-- @return: t - table with the values changed
 function tableutils:change_value_case(t, c)
-  for k, v in pairs(t) do
-    if string.lower(c) == "upper" then
-      t[k] = string.upper(tostring(v))
-    elseif string.lower(c) == "lower" then
-      t[k] = string.lower(tostring(v))
-    else
-      error("Invalid case type, options are upper or lower.")
-    end
+  if type(c) ~= "function" then
+    error("Invalid case type, string.upper or string.lower are valid options")
   end
+
+  for k, v in pairs(t) do
+    t[k] = c(tostring(v))
+  end
+  
+  return t
 end
 
 -- Print the keys (indices) and values of a table
