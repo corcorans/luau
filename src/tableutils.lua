@@ -65,21 +65,18 @@ end
 
 -- Upper or lower cases the values in the give table
 -- @param: t - table to change
--- @param: c - case type (up or low)
--- @return: true on success, otherwise false
+-- @param: c - case type (upper or lower)
+-- @error: Will be raised the case type is not upper or lower
 function tableutils:change_value_case(t, c)
   for k, v in pairs(t) do
-    if c == up then
+    if string.lower(c) == "upper" then
       t[k] = string.upper(tostring(v))
-    elseif c == down then
+    elseif string.lower(c) == "lower" then
       t[k] = string.lower(tostring(v))
     else
-      error("Invalid case type, options are up or down.")
-      return false
+      error("Invalid case type, options are upper or lower.")
     end
   end
-
-  return true
 end
 
 -- Print the keys (indices) and values of a table
