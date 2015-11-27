@@ -9,7 +9,7 @@ description = {
       More functionality added to core classes
       such as string and table.
    ]],
-   homepage = "https://github.com/corcorans/Luau"
+   homepage = "https://github.com/corcorans/Luau",
    license = "MIT/X11" 
 }
 dependencies = {
