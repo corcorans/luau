@@ -1,5 +1,5 @@
 package = "Luau"
-version = "0.1"
+version = "1.0-1"
 source = {
    url = "https://github.com/corcorans/Luau"
 }
@@ -13,7 +13,7 @@ description = {
    license = "MIT/X11" 
 }
 dependencies = {
-   "lua ~> 5.1"
+   "lua >= 5.1"
 }
 build = {
    type = "builtin",
