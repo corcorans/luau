@@ -1,7 +1,7 @@
 package = "Luau"
 version = "1.0-1"
 source = {
-   url = "https://github.com/corcorans/Luau"
+   url = "https://github.com/corcorans/luau"
 }
 description = {
    summary = "The missing parts of Lua",
@@ -9,7 +9,7 @@ description = {
       More functionality added to core classes
       such as string and table.
    ]],
-   homepage = "https://github.com/corcorans/Luau",
+   homepage = "https://github.com/corcorans/luau",
    license = "MIT/X11" 
 }
 dependencies = {
