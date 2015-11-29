@@ -5,7 +5,7 @@ local tableutils = {}
 -- @param: a - table 1
 -- @param: b - table 2
 -- @return: t - new table with difference
-function tableutils:diff(a, b)
+function tableutils.diff(a, b)
   local t = {}
   local c = 1
 
@@ -23,7 +23,7 @@ end
 -- @param: t - table to search
 -- @param: i - Value to look for
 -- @return: k - the key(index)
-function tableutils:find(t, i)
+function tableutils.find(t, i)
   for k, v in pairs(t) do
     if v == i then
       return k
@@ -36,7 +36,7 @@ end
 -- Reverses a table
 -- @param: t - table to be reversed
 -- @return: n - original table reversed
-function tableutils:reverse(t)
+function tableutils.reverse(t)
   local s = #t
   local n = {}
 
@@ -52,7 +52,7 @@ end
 -- @param: t - table to remove the element from
 -- @param: i - index to remove element
 -- @return: true if successful, otherwise false
-function tableutils:delete_at(t, i)
+function tableutils.delete_at(t, i)
   for k, v in pairs(t) do
     if k == i then
       t[k] = nil
@@ -68,7 +68,7 @@ end
 -- @param: t - table to change
 -- @param: c - case type (upper or lower)
 -- @return: t - table with the values changed
-function tableutils:change_value_case(t, c)
+function tableutils.change_value_case(t, c)
   if type(c) ~= "function" then
     error("Invalid case type, string.upper or string.lower are valid options")
   end
@@ -82,7 +82,7 @@ end
 
 -- Print the keys (indices) and values of a table
 -- @param: t - table to inspect
-function tableutils:inspect(t)
+function tableutils.inspect(t)
   for k, v in pairs(t) do
     if type(v) == 'table' then
       self:inspect(v)
