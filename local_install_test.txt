@@ -1,9 +1,0 @@
--- Remove any older/out dated version
-luarocks remove --force luau
-
--- Install the latest
-luarocks install luau-1.0-1.rockspec
-
--- Quick test in interactive lua
-x = require("stringutils")
-print(x.swapcase("abc"))
