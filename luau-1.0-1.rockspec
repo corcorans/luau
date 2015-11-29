@@ -1,7 +1,7 @@
 package = "Luau"
 version = "1.0-1"
 source = {
-   url = "https://github.com/corcorans/luau"
+   url = "git://github.com/corcorans/luau"
 }
 description = {
    summary = "The missing parts of Lua",
