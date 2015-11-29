@@ -10,16 +10,16 @@ Modules to make up for the missing parts within the core of Lua.
 * tableutils
  
 
-## Install:
-''''html
+## Install and Usage:
+```html
   git clone git@github.com:corcorans/luau.git
-''''
+```
 
-''''html
+```html
   luarocks install luau-1.0-1.rockspec
-''''
+```
 
-''''lua
+```lua
   x = require("stringutils")
   print(x.swapcase("abc"))
-''''
+```
